@@ -1,0 +1,47 @@
+<?php
+/**
+ * This file is part of the Itabs_SalesRuleSearch module.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @category  Itabs
+ * @package   Itabs_SalesRuleSearch
+ * @author    ITABS GmbH <info@itabs.de>
+ * @copyright 2015 ITABS GmbH (http://www.itabs.de)
+ */
+/**
+ * @var $this Itabs_SalesRuleSearch_Block_Adminhtml_Resolve
+ */
+?>
+<br/>
+<form action="<?php echo $this->getFormActionUrl() ?>" method="post">
+    <input name="form_key" type="hidden" value="<?php echo $this->getFormKey() ?>" />
+    <div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-edit-form fieldset-legend"><?php echo $this->__('Search shopping cart rule by coupon code') ?></h4>
+        </div>
+        <div class="fieldset  ignore-validate" id="coupons_information_fieldset">
+            <div class="hor-scroll">
+                <table cellspacing="0" class="form-list">
+                    <tbody>
+                        <tr>
+                            <td class="label"><label for="coupon_code"><?php echo $this->helper('salesrule')->__('Coupon Code') ?></label></td>
+                            <td class="value">
+                                <input id="coupon_code" name="coupon_code" value="" title="<?php echo $this->helper('salesrule')->__('Coupon Code') ?>" class="input-text" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">&nbsp;</td>
+                            <td class="value">
+                                <button type="submit" title="<?php echo $this->helper('adminhtml')->__('Search') ?>" class="scalable generate">
+                                    <span><span><?php echo $this->helper('adminhtml')->__('Search') ?></span></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</form>

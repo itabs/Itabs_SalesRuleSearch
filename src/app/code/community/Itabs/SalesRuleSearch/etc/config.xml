@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Itabs_SalesRuleSearch module.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @category  Itabs
+ * @package   Itabs_SalesRuleSearch
+ * @author    ITABS GmbH <info@itabs.de>
+ * @copyright 2015 ITABS GmbH (http://www.itabs.de)
+ */
+-->
+<config>
+    <modules>
+        <Itabs_SalesRuleSearch>
+            <version>1.0.0</version>
+        </Itabs_SalesRuleSearch>
+    </modules>
+    <global>
+        <blocks>
+            <itabs_salesrulesearch>
+                <class>Itabs_SalesRuleSearch_Block</class>
+            </itabs_salesrulesearch>
+        </blocks>
+        <helpers>
+            <itabs_salesrulesearch>
+                <class>Itabs_SalesRuleSearch_Helper</class>
+            </itabs_salesrulesearch>
+        </helpers>
+        <models>
+            <itabs_salesrulesearch>
+                <class>Itabs_SalesRuleSearch_Model</class>
+            </itabs_salesrulesearch>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <itabs_salesrulesearch before="Mage_Adminhtml">Itabs_SalesRuleSearch_Adminhtml</itabs_salesrulesearch>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <itabs_salesrulesearch>
+                    <file>itabs_salesrulesearch.xml</file>
+                </itabs_salesrulesearch>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <itabs_salesrulesearch>
+                    <files>
+                        <default>Itabs_SalesRuleSearch.csv</default>
+                    </files>
+                </itabs_salesrulesearch>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
