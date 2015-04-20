@@ -1,0 +1,5 @@
+src/app/code/community/Itabs/SalesRuleSearch                                 app/code/community/Itabs/SalesRuleSearch
+src/app/etc/modules/Itabs_SalesRuleSearch.xml                                app/etc/modules/Itabs_SalesRuleSearch.xml
+src/app/design/adminhtml/default/default/layout/itabs_salesrulesearch.xml    app/design/adminhtml/default/default/layout/itabs_salesrulesearch.xml
+src/app/design/adminhtml/default/default/template/itabs/salesrulesearch      app/design/adminhtml/default/default/template/itabs/salesrulesearch
+src/app/locale/de_DE/Itabs_SalesRuleSearch.csv                               app/locale/de_DE/Itabs_SalesRuleSearch.csv
