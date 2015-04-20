@@ -5,7 +5,7 @@ Allows admin users to search sales rules by coupon code.
 
 Facts
 -----
-- Version: x.x.x
+- Version: 1.0.0
 - [extension on GitHub](https://github.com/itabs/Itabs_SalesRuleSearch)
 
 Description
